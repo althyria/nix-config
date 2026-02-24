@@ -55,7 +55,7 @@ mount -o compress=zstd,subvol={root,nix,persist,swap} /dev/nvme0n1p2 /mnt/{nix,p
 mount /dev/nvme0n1p1 /mnt/boot
 
 # Clone the configuration files and enter repo
-git clone https://github.com/sajenim/nix-config.git && cd nix-config
+git clone https://github.com/althyria/nix-config.git && cd nix-config
 
 # Install our system configuration
 nixos-install --flake .#hostname
